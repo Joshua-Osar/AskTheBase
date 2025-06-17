@@ -1,0 +1,226 @@
+# =============================================================================
+# Supply Chain Analytics Platform - Python Dependencies
+# =============================================================================
+# Complete dependency list for enterprise-grade analytics platform
+# Install with: pip install -r requirements.txt
+
+# =============================================================================
+# Core Web Framework
+# =============================================================================
+Flask==3.0.0
+Werkzeug==3.0.1
+
+# =============================================================================
+# Data Processing & Analysis
+# =============================================================================
+
+# Date and time utilities
+python-dateutil==2.8.2
+
+# =============================================================================
+# Database Connectivity & ORM
+# =============================================================================
+# SQL Server connectivity
+pyodbc==5.0.1
+
+# Database abstraction layer
+# thk
+SQLAlchemy==2.0.23
+sqlalchemy-utils==0.41.1
+
+# =============================================================================
+# AI/ML - Anthropic Claude Integration
+# =============================================================================
+# Anthropic Claude API client
+anthropic>=0.25.0
+
+# HTTP requests for API calls
+requests>=2.31.0
+
+# =============================================================================
+# Data Visualization
+# =============================================================================
+# Interactive plotting library
+plotly==5.17.0
+
+# =============================================================================
+# Environment & Configuration Management
+# =============================================================================
+# Environment variable management
+python-dotenv==1.0.0
+
+# =============================================================================
+# Caching & Performance
+# =============================================================================
+# In-memory caching with TTL support
+cachetools==5.3.2
+
+# Redis support (optional, for distributed caching)
+redis==5.0.1
+
+# =============================================================================
+# Data Export Capabilities
+# =============================================================================
+# Excel file handling
+openpyxl==3.1.2
+xlsxwriter==3.1.9
+
+# Advanced Excel operations
+xlrd==2.0.1
+
+# =============================================================================
+# Security & Authentication
+# =============================================================================
+# Password hashing
+bcrypt==4.1.2
+
+# Secure token generation
+cryptography==41.0.7
+
+# User session management (optional)
+Flask-Login==0.6.3
+Flask-Session==0.5.0
+
+# =============================================================================
+# JSON & Data Serialization
+# =============================================================================
+# Enhanced JSON handling
+simplejson==3.19.2
+
+# =============================================================================
+# Utilities & Helpers
+# =============================================================================
+# Better CSV parsing
+chardet==5.2.0
+
+# UUID generation
+uuid==1.30
+
+# Progress bars for long operations
+tqdm==4.66.1
+
+# =============================================================================
+# Flask Extensions (Core)
+# =============================================================================
+# Template rendering utilities
+Jinja2==3.1.2
+MarkupSafe==2.1.3
+
+# Secure cookies and sessions
+itsdangerous==2.1.2
+
+# =============================================================================
+# Production Deployment
+# =============================================================================
+# Production WSGI server
+gunicorn==21.2.0
+
+# Process monitoring
+psutil==5.9.6
+
+# =============================================================================
+# Logging & Monitoring
+# =============================================================================
+# Enhanced logging with colors
+colorlog==6.8.0
+
+# Structured logging
+structlog==23.2.0
+
+# =============================================================================
+# Development & Testing (Optional - remove in production)
+# =============================================================================
+# Testing framework
+# pytest==7.4.3
+# pytest-flask==1.3.0
+
+# Code formatting
+# black==23.11.0
+# isort==5.12.0
+
+# Linting
+# flake8==6.1.0
+# pylint==3.0.3
+
+# Type checking
+# mypy==1.7.1
+
+# =============================================================================
+# Optional: Advanced Features
+# =============================================================================
+# Task queue for background jobs (optional)
+# celery==5.3.4
+
+# Email notifications (optional)
+# Flask-Mail==0.9.1
+
+# API documentation (optional)
+# Flask-RESTful==0.3.10
+# flasgger==0.9.7.1
+
+# =============================================================================
+# Version Compatibility Notes
+# =============================================================================
+# Python: 3.8+ required
+# SQL Server: 2016+ recommended
+# ODBC Driver: 17+ for SQL Server required
+# Claude API: Latest version supported
+
+# =============================================================================
+# Installation Instructions
+# =============================================================================
+# 1. Create virtual environment (recommended):
+#    python -m venv venv
+#    
+# 2. Activate virtual environment:
+#    Windows: venv\Scripts\activate
+#    Mac/Linux: source venv/bin/activate
+#    
+# 3. Upgrade pip:
+#    pip install --upgrade pip
+#    
+# 4. Install dependencies:
+#    pip install -r requirements.txt
+#    
+# 5. Install ODBC Driver (if not already installed):
+#    Download from Microsoft: ODBC Driver 17 for SQL Server
+
+# =============================================================================
+# Platform-Specific Notes
+# =============================================================================
+# Windows:
+# - ODBC Driver 17 for SQL Server should be installed
+# - Visual C++ Redistributable may be required for some packages
+# 
+# macOS:
+# - May need to install unixODBC: brew install unixodbc
+# - ODBC Driver 17 for SQL Server available from Microsoft
+# 
+# Linux:
+# - Install unixODBC development headers
+# - Install Microsoft ODBC Driver 17 for SQL Server
+# - May need: sudo apt-get install unixodbc-dev (Ubuntu/Debian)
+
+# =============================================================================
+# Estimated Installation Size
+# =============================================================================
+# Total package size: ~150-200 MB
+# With dependencies: ~300-400 MB
+# Recommended disk space: 1 GB free
+
+# =============================================================================
+# Performance Optimizations
+# =============================================================================
+# For better performance in production:
+# 1. Use Redis for caching (install redis-server)
+# 2. Consider using uvloop: pip install uvloop
+# 3. Use connection pooling (already configured in app)
+# 4. Enable query result caching (configured in .env)
+
+# =============================================================================
+# Security Considerations
+# =============================================================================
+# Production security packages (uncomment if needed):
+# Flask-Talisman==1.1.0  # Security headers
+# Flask-Limiter==3.5.0   # Rate limiting
+# Flask-CORS==4.0.0      # CORS handling
